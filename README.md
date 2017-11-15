@@ -6,7 +6,7 @@ These are the scripts that run behind the online tool on ```http://www.wordvecto
 I will be adding more evaluation scripts here over the course of time.
 
 ### Requirements
-1. Python 2.7 (+numpy package)
+1. Python 2.7 or 3.5+ (+numpy package)
 
 ### Data you need
 1. Word vector file
@@ -18,15 +18,9 @@ Each vector file should have one word vector per line as follows (space delimite
 
 ### Evaluating on multiple word sim tasks
 
-```python all_wordsim.py word_vec_file word_sim_file_dir```
+```wordsim.sh word_vec_file word_sim_file_dir```
 
-```python all_wordsim.py skip-gram-vecs.txt data/word-sim/```
-
-### Evaluating on one word sim task
-
-```python wordsim.py word_vec_file word_sim_file```
-
-```word_sim_file``` should be in the same format as files in ```data/word-sim/```
+(word_vec_file could either be plain text or a gzip file))))
 
 ### Reference
 
